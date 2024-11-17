@@ -16,7 +16,6 @@ Este proyecto educativo tiene como objetivo enseñar a los estudiantes los conce
 8. [Definición de Modelos](#8-definición-de-modelos)
 9. [Creación de Vistas y URLs](#9-creación-de-vistas-y-urls)
 10. [Uso del Panel Administrativo](#10-uso-del-panel-administrativo)
-11. [Despliegue en Producción](#11-despliegue-en-producción)
 
 ---
 
@@ -176,18 +175,6 @@ python manage.py migrate
    ```
 3. Accede al panel administrativo en `http://127.0.0.1:8000/admin`.
 
-## 11. Despliegue en Producción
-
-Para preparar el proyecto para producción:
-
-1. Configura `DEBUG = False` en `settings.py`.
-2. Agrega dominios permitidos en `ALLOWED_HOSTS`:
-   ```python
-   ALLOWED_HOSTS = ['tu_dominio.com', '127.0.0.1']
-   ```
-3. Usa herramientas como `gunicorn` y `nginx` para desplegar en servidores.
-
----
 
 ## Conclusión
 
